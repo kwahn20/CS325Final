@@ -1,0 +1,26 @@
+/**
+File: homepage.html
+Name: Kevin Ahn and Kyle Slager
+Class: CS325, January 2019
+*/
+
+
+body {background-color: grey; margin: 0}
+
+footer a {position: relative;
+            bottom: 0; left:0}
+
+.mainTitle {float: left ; font-style: italic ;
+            border: 1px solid black; padding: 14px ;
+            margin: 0;  background-color: palegoldenrod;}
+
+.navigationBar {float: left; font-size: 24px;
+                text-align: center; color: Red;
+                background-color: cadetblue; margin-right: 0}
+
+.navigationBar a {float: left; font-size: 24px;
+                    padding: 14px 16px;
+                    text-align: center; color: Black;
+                    border: 1px solid black;}
+
+.navigationBar a:hover {background-color: whitesmoke;}
