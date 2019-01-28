@@ -4,10 +4,11 @@ File: Homepage.html
 Name: Kevin Ahn and Kyle Slager
 Class: CS325, January 2019
 -->
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8"/>
 	<link rel="stylesheet" type="text/css" href="contact.css" />
+	<link rel="stylesheet" type="text/css" href="dropdownMenu.css" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="contactValidation.js"></script>
 	<title>Contact Marquis Properties</title>
@@ -32,17 +33,24 @@ Class: CS325, January 2019
     <a href="aboutPage.html">About</a>
 </div>
 </div>
-<br/><br/><br/><br/><br/>
+<br/><br/><br/>
+<div id="contactInfo">
+	<h2>Have any questions?</h2>
+	<p> Please reach out to us using the form below. We will be in contact with
+		you as soon as possible. We welcome any comments, questions, concerns
+		or even any reviews if you have stayed with us before!
+	</p>
+</div>
 
-<div> 
-	<!--
+<div>
+<!--
 Creates a form that contains a comment section and a name input
 The user must input a name and comment for the form to be properly submitted.
 -->
 <fieldset id='contactForm'>
     <legend>Contact Us!</legend> <!--creates a legend for the form-->
 	<form class="contactValidator" action="emailGenerator.php" method="post">
-		<input type="text" name="userName" placeholder="Enter Your Name">
+		<input type="text" name="userName" placeholder="Enter Your Name"><br/>
 		<input id="emailValid" type="text" name="email" placeholder="Enter Your email">
 		<span class="validEmail">Email is valid</span><br/>
 		<textarea name="commentContent" rows="5" wrap="soft"
@@ -50,9 +58,6 @@ The user must input a name and comment for the form to be properly submitted.
 	    <input type="submit" value="Submit">
 	</form>
 </fieldset>
-
-</body>
-</html>
 </div>
 <footer><a href="homepage.html">Back to Top</a></footer>
 </body>

@@ -10,7 +10,9 @@ $finalMsg = "Name: ".$nameInput;
 $finalMsg .= "\nEmail: ".$emailInput;
 $finalMsg .= "\nMessage Content: ".$commentInput;
 $finalMsg = wordwrap($finalMsg, 70, "\r\n");
+
 //mail('kwahn16yootube@gmail.com',"Marquis Properties Contact:",$finalMsg);
 echo file_get_contents("contact.html");
+
 ?>
 

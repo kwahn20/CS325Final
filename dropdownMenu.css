@@ -61,3 +61,16 @@
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {}
+
+/* Dropdown Button */
+.dropbtn {
+    font-family: "Times New Roman", Times, serif;
+    float: left;
+    background: transparent;
+    color: white;
+    margin: 10px 16px;
+    font-size: 32px;
+    opacity: .8;
+    text-decoration: none;
+    border: none;
+}
