@@ -6,8 +6,9 @@ Class: CS325, January 2019
 
 
 body {
-font-family: "Times New Roman", Times, serif; background-color: blue}
+font-family: "Times New Roman", Times, serif; background-color: blue
 }
+
 
 .validEmail {color: green; display:inline}
 .isValid {color: green ; display: inline}
@@ -19,7 +20,7 @@ footer a {position: relative;
 .mainTitle {float: left; font-size: 32px;
                 text-align: center; color: white;
                 position: fixed;
-                left: 0%;
+                left: 0;
                 margin-left: 10px;}
 
 .mainTitle a {float: left; font-size: 32px;
@@ -32,7 +33,7 @@ footer a {position: relative;
 .navigationBar {float: right; font-size: 32px;
                 text-align: center; color: white;
                 position: fixed;
-                right: 0%;
+                right: 0;
                 margin-right: 10px;}
 
 .navigationBar a {float: left; font-size: 32px;
