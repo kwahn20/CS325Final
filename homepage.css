@@ -5,22 +5,129 @@ Class: CS325, January 2019
 */
 
 
-body {background-color: grey; margin: 0}
+body {
+font-family: "Times New Roman", Times, serif;
+}
+
+#TextArea {
+	position: absolute;
+	width: 100%;
+	background: white;
+	}
+	
+.homescreentext {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	}
 
 footer a {position: relative;
             bottom: 0; left:0}
 
-.mainTitle {float: left ; font-style: italic ;
-            border: 1px solid black; padding: 14px ;
-            margin: 0;  background-color: palegoldenrod;}
+/* 
+.mainTitle {float: left; font-size: 24px;  
+			text-align: center;          
+            position: fixed;
+            margin: 10px 16px;
+            left: 0%;
+            color: white;
+            opacity:.5;}
+ */
+            
+.mainTitle {float: left; font-size: 32px;
+                text-align: center; color: white;
+                position: fixed;
+                left: 0%;
+                margin-left: 10px;}
 
-.navigationBar {float: left; font-size: 24px;
-                text-align: center; color: Red;
-                background-color: cadetblue; margin-right: 0}
+.mainTitle a {float: left; font-size: 32px;
+					margin: 10px 16px;
+                    text-decoration: none;
+                    text-align: center; color: white;
+                    z-index: 5;
+                    opacity: .75}
 
-.navigationBar a {float: left; font-size: 24px;
-                    padding: 14px 16px;
-                    text-align: center; color: Black;
-                    border: 1px solid black;}
+.navigationBar {float: right; font-size: 32px;
+                text-align: center; color: white;
+                position: fixed;
+                right: 0%;
+                margin-right: 10px;}
 
-.navigationBar a:hover {background-color: whitesmoke;}
+.navigationBar a {float: left; font-size: 32px;
+					margin: 10px 16px;
+                    text-decoration: none;
+                    text-align: center; color: white;
+                    z-index: 5;
+                    opacity: .75}
+
+.navigationBar a:hover {border-bottom: 2px solid white;}
+
+p {
+	line-height: 1.8;
+	font-size: 20px;
+	}
+
+h2{
+	font-size: 32px;
+	}
+
+
+#HomeScreenImage {
+	display: block;
+	width: 100%;
+	position: relative;
+	z-index: -5;
+	padding: 0px;
+	}
+	
+	
+/* Dropdown Button */
+.dropbtn {
+font-family: "Times New Roman", Times, serif;
+float: left;
+  background: transparent;
+  color: white;
+  margin: 10px 16px;
+  font-size: 32px;
+  opacity: .8;
+  text-decoration: none;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+float: left;
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  margin-top:50px;
+  margin-left:16px;
+  position: absolute;
+  background: transparent;
+  min-width: 160px;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+	text-align: center;
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {}
+ 
+form {margin: 0 auto ; width: 50%}
