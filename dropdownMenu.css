@@ -1,0 +1,63 @@
+.mainTitle {float: left; font-size: 32px;
+    text-align: center; color: white;
+    position: fixed;
+    left: 0;
+    margin-left: 10px;}
+
+.mainTitle a {float: left; font-size: 32px;
+    margin: 10px 16px;
+    text-decoration: none;
+    text-align: center; color: white;
+    z-index: 5;
+    opacity: .75}
+
+.navigationBar {float: right; font-size: 32px;
+    text-align: center; color: white;
+    position: fixed;
+    right: 0;
+    margin-right: 10px;}
+
+.navigationBar a {float: left; font-size: 32px;
+    margin: 10px 16px;
+    text-decoration: none;
+    text-align: center; color: white;
+    z-index: 5;
+    opacity: .75}
+
+.navigationBar a:hover {border-bottom: 2px solid white;}
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    float: left;
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    margin-top:50px;
+    margin-left:16px;
+    position: absolute;
+    background: transparent;
+    min-width: 160px;
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {}
