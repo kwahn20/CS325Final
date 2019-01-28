@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+File: Homepage.html
+Name: Kevin Ahn and Kyle Slager
+Class: CS325, January 2019
+-->
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="contact.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="contactValidation.js"></script>
+	<title>Contact Marquis Properties</title>
+</head>
+<body id="contact">
+
+<!--First section that creates the main title and a navigation bar-->
+<div id="NavBar">
+<div class="mainTitle">
+	<a href="homepage.html">Marquis Properties</a>
+</div>
+<div class="navigationBar" >
+	<div class="dropdown">
+  		<button class="dropbtn">Properties</button>
+  			<div class="dropdown-content">
+    			<a href="#">Naples</a>
+    			<a href="#">Michigan</a>
+ 			</div>
+	</div>
+    <a href="homepage.html">Book Now</a>
+    <a href="contact.html">Contact</a>
+    <a href="aboutPage.html">About</a>
+</div>
+</div>
+<br/><br/><br/><br/><br/>
+
+<div> 
+	<!--
+Creates a form that contains a comment section and a name input
+The user must input a name and comment for the form to be properly submitted.
+-->
+<fieldset id='contactForm'>
+    <legend>Contact Us!</legend> <!--creates a legend for the form-->
+	<form class="contactValidator" action="emailGenerator.php" method="post">
+		<input type="text" name="userName" placeholder="Enter Your Name">
+		<input id="emailValid" type="text" name="email" placeholder="Enter Your email">
+		<span class="validEmail">Email is valid</span><br/>
+		<textarea name="commentContent" rows="5" wrap="soft"
+				placeholder="Please enter your message!"></textarea><br/>
+	    <input type="submit" value="Submit">
+	</form>
+</fieldset>
+
+</body>
+</html>
+</div>
+<footer><a href="homepage.html">Back to Top</a></footer>
+</body>
+</html>
