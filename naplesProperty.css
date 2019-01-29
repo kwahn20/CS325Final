@@ -1,0 +1,12 @@
+#leftButton, #rightButton {
+    height: 50px;
+    width: 50px;
+}
+
+#leftButton{
+    float: left;
+}
+
+#rightButton{
+    float: right;
+}
