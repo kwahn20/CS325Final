@@ -41,7 +41,7 @@ Class: CS325, January 2019
 		or even any reviews if you have stayed with us before!
 	</p>
 </div>
-
+<div class="success">Message sent</div>
 <div>
 <!--
 Creates a form that contains a comment section and a name input
@@ -50,10 +50,10 @@ The user must input a name and comment for the form to be properly submitted.
 <fieldset id='contactForm'>
     <legend>Contact Us!</legend> <!--creates a legend for the form-->
 	<form class="contactValidator" action="emailGenerator.php" method="post">
-		<input type="text" name="userName" placeholder="Enter Your Name"><br/>
-		<input id="emailValid" type="text" name="email" placeholder="Enter Your email">
+		<input id='name' type="text" name="userName" placeholder="Enter Your Name"><br/>
+		<input id="email" type="text" name="email" placeholder="Enter Your email">
 		<span class="validEmail">Email is valid</span><br/>
-		<textarea name="commentContent" rows="5" wrap="soft"
+		<textarea id='msgContent' name="commentContent" rows="5" wrap="soft"
 				placeholder="Please enter your message!"></textarea><br/>
 	    <input type="submit" value="Submit">
 	</form>

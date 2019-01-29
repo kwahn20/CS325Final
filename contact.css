@@ -10,10 +10,10 @@ body { font-family: "Times New Roman", Times, serif;
        background-repeat: no-repeat; background-size: cover; text-align: center}
 
 
-.validEmail {color: green; display:inline}
+.validEmail {color: green; text-align: center}
 .isValid {color: green ; display: inline}
 .hidden {visibility: hidden}
-
+.invalid {color: red; text-align: center}
 footer a {position: relative;
             bottom: 0; left:0}
 
@@ -36,7 +36,9 @@ input {width: 100%; font-size: 20px}
 legend {background-color: aliceblue; font-size: 25px; border: 1px solid black}
 textarea {width: 100%; font-size: 20px}
 
+
 #contactInfo {text-align: left;  margin: 0 auto; width: 50%;
               background-color: aliceblue; opacity: 0.75;
                 min-width: 400px; padding-left: 1%}
 
+.success {visibility: hidden}
