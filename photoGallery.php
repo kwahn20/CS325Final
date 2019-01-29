@@ -17,8 +17,8 @@
         $idx = (count($images) - 3);
     }
     $numOfnums = ($idx + 1) + "/" + (count($images) - 2);
-    $images = scandir("/web/docs/kwahn20/CS325MP/ASSETS/Regatta_pics/", 1);
-    echo "http://cs325.colby.edu/kwahn/CS325MP/CS325MP/ASSETS/Regatta_pics/$images[$idx]" + " $" + $numOfnums;
+    //echo "http://cs325.colby.edu/kwahn/CS325MP/CS325MP/ASSETS/Regatta_pics/$images[$idx]" + " $" + $numOfnums;
+    echo $images;
 
 
 

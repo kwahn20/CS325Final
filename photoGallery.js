@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
     $.get({
-        url: 'http://cs325.colby.edu/kwahn/CS325MP/photoGallery.php',
+        url: 'http://cs325.colby.edu/kwahn20/CS325MP/photoGallery.php',
         success: function(data){
             let i = 0;
             let idx = 0;
@@ -39,7 +39,7 @@ $(document).ready(function(){
     $("#leftButton").click(function(){
         $.ajax({
             type: 'POST',
-            url: 'http://cs325.colby.edu/kwahn/CS325MP/photoGallery.php',
+            url: 'http://cs325.colby.edu/kwahn20/CS325MP/photoGallery.php',
             data: {idx: $("#numOfnum").innerHTML, dir: -1 },
             success: function(data) {
                 let i = 0;
