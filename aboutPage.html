@@ -7,39 +7,57 @@ Class: CS325, January 2019
 <html>
 <head>
     <meta charset="utf-8"/>
-    <link rel="stylesheet" type="text/css" href="homepage.css" />
+    <link rel="stylesheet" type="text/css" href="about.css" />
+	<link rel="stylesheet" type="text/css" href="dropdownMenu.css" />
     <title>About Marquis Properties</title>
 </head>
 <body>
 
 <!--First section that creates the main title and a navigation bar-->
-<div id="NavBar">
-<p class="mainTitle">
-    Marquis Properties
-</p>
-<div class="navigationBar" >
-    <a href="propertiesPage.html">Properties</a>
-    <a href="homepage.html">Book Now</a>
-    <a href="contact.html">Contact</a>
-    <a href="aboutPage.html">About</a>
-</div>
-
-</div>
-
-<div id="TextArea">
-	<div class="homescreentext">
-		<h2>About Us</h2>
-		<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-		sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-		Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-		nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-		reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-		Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-		deserunt mollit anim id est laborum.
-		</p>
+<div class="NavBar">
+	<div class="mainTitle">
+		<a href="homepage.html">Marquis Properties</a>
 	</div>
+	<div class="navigationBar" >
+		<div class="dropdown">
+			<button class="dropbtn">Properties</button>
+			<div class="dropdown-content">
+				<a href="#">Naples</a>
+				<a href="#">Michigan</a>
+			</div>
+		</div>
+		<a href="homepage.html">Book Now</a>
+		<a href="contact.html">Contact</a>
+		<a href="aboutPage.html">About</a>
+	</div>
+</div>
 
+<br/><br/><br/>
+<div id="leftPic">
+	<h2>About Us</h2>
+	<img src="ASSETS/Regatta_pics/regatta-004.jpg" alt="pic">
+	<p class="bottom-left">
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+	sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+	Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+	nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+	reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+	Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+	deserunt mollit anim id est laborum.
+	</p>
+</div>
+
+<div id="rightPic">
+	<img src="ASSETS/Regatta_pics/regatta-008.jpg" alt="pic">
+	<p class="bottom-right">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+		sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+		nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+		reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+		Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+		deserunt mollit anim id est laborum.
+	</p>
 </div>
 
 <footer><a href="Homepage.html">Back to Top</a></footer>

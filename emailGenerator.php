@@ -11,7 +11,6 @@ if ($_POST) {
     $finalMsg = wordwrap($finalMsg, 70, "\r\n");
     mail('kwahn16yootube@gmail.com',"Marquis Properties Contact:",$finalMsg);
     header("Location: http://cs325.colby.edu/kwahn20/Marquis_Properties/contact.html");
-
 }
 ?>
 
