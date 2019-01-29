@@ -6,19 +6,25 @@
  * Time: 09:11
  */
 
-    $numOfnums = $_POST["idx"];
+    session_start();
+    $idx = $_SESSION["index"];
     $dir = $_POST["dir"];
-    $images = scandir("/web/docs/kwahn20/CS325MP/ASSETS/Regatta_pics/", 1);
-    $idx = (int)substr($numOfnums,0,2) + $dir;
+    $idx = $idx + $dir;
     if($idx < 1){
+        $idx = 13;
+    }
+    if($idx > 13){
         $idx = 1;
     }
-    if($idx > (count($images) - 3)){
-        $idx = (count($images) - 3);
+    $picString = "regatta-0";
+    if ($idx < 10){
+        $picString = $picString + "0" + $idx;
     }
-    $numOfnums = ($idx + 1) + "/" + (count($images) - 2);
+    else{
+        $picString = $picString + $idx;
+    }
     //echo "http://cs325.colby.edu/kwahn/CS325MP/CS325MP/ASSETS/Regatta_pics/$images[$idx]" + " $" + $numOfnums;
-    echo $images;
+    echo "http://cs325.colby.edu/kwahn/CS325MP/CS325MP/ASSETS/Regatta_pics/$picString.jpg";
 
 
 

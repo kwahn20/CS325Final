@@ -19,7 +19,7 @@ body {
     background: cornflowerblue;
 }
 
-#Overview {
+.propSect {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
@@ -28,19 +28,46 @@ body {
     border: 2px dashed black;
     padding: 10px;
     text-align: center;
+    font-size: 24px;
 }
 
 #propertyNav {
     width: 50px;
     height: 100px;
+    top: 50px;
     position: fixed
+
 
 }
 
 .left {
     text-align: left;
+    display: inline-block;
 }
 
 .right {
     text-align: right;
+    display: inline-block;
+}
+
+table, tr, td {
+    height: 50px;
+    table-layout: fixed;
+    font-size: 24px;
+}
+
+tr, td {
+    text-align: center;
+    font-size: 24px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+caption {
+    text-align: center;
+    font-size: 24px;
 }
