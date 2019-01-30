@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Book Now</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="logInHandler.js"></script>
 </head>
 <body>
 
 <fieldset id='logInForm'>
     <legend>Log in</legend>
-    <form class="LogInValidation">
+    <form class="LogInValidation" action="handleLogIn.php" method="post">
         Name: <input type="text" id="userName" placeholder="Enter Your Name"><br /><br />
         Password: <input type="text" id="password" placeholder="Enter Your Password"><br /><br />
-        <button id="submitButton">Submit</button>
+        <input type="submit" value="Submit">
         <button id="newUserButton">Create New User</button>
         <button id="fotgotButton">Forgot Password</button>
     </form>

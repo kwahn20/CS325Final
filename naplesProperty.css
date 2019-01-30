@@ -16,8 +16,12 @@
 }
 
 body {
-    background: cornflowerblue;
+    background: #EE7070;
 }
+
+#E6E2DD
+
+#373A36
 
 .propSect {
     margin-left: auto;
@@ -71,3 +75,12 @@ caption {
     text-align: center;
     font-size: 24px;
 }
+
+#toolBarBox {
+    height: 50px;
+    width: 100%;
+    z-index: -1;
+    background: black;
+}
+
+.
