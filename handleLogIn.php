@@ -23,13 +23,14 @@ $checkPass = $_POST["password"];
 $userName = 'kwslag20';
 $password = 'hl8sd6hsr';
 $database = 'kwslag20';
-$sql = "select first_name from logins where username=".$checkUser." and password=".$checkPass;
+$sql = "select first_name from logins where username=''".$checkUser."' and password='".$checkPass;
 
 try{
     $mySQLLink = new PDO("mysql:dbname=$database;host=localhost", "$userName", "$password");
     $statement = $mySQLLink->prepare($sql);
     $statement->execute(array("%$query%"));
     $data = $statement->fetchAll();
+    echo "This worked";
 }
 catch(PDOException $ex){
     echo "Server Error";
