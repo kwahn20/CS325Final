@@ -1,14 +1,59 @@
 <!DOCTYPE html>
 <head>
-    <meta charset="utf-8"/>
-    <link rel="stylesheet" type="text/css" href="Lab10_kwslag20.css" />
+    <meta charset="UTF-8">
+    <title>Book Now</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="http://cs325.colby.edu/kwslag20/Lab10/Lab10_kwslag20.js"></script>
-    <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-    <title>Lab 10</title>
+    <script src="loginHandler.js"></script>
+    <link rel="stylesheet" type="text/css" href="login.css" />
+    <link rel="stylesheet" type="text/css" href="dropdownMenu.css" />
 </head>
 <body>
+<div id="rightPanel"></div>
+<div id="toolBarBox" class="hidden"></div>
+<div id="NavBar">
+    <div class="mainTitle">
+        <a href="homepage.html">Marquis Properties</a>
+    </div>
+    <div class="navigationBar" >
+        <div class="dropdown">
+            <button class="dropbtn">Properties</button>
+            <div class="dropdown-content">
+                <a href='naplesPropertyPage.html'>Naples</a>
+                <a href="#">Michigan</a>
+            </div>
+        </div>
+        <a href="BookNowPage.html">Book Now</a>
+        <a href="contact.html">Contact</a>
+        <a href="aboutPage.html">About</a>
+    </div>
+</div>
+
+<br/><br/><br/><br/><br/><br/>
+
+<div id="changeable">
+    <fieldset id='logInForm'>
+        <legend>Log in</legend>
+        <form class="LogInValidation" action="handleLogin.php" method="post">
+            Name: <input type="text" name="userName" placeholder="Enter Your Name"><br /><br />
+            Password: <input type="text" name="password" placeholder="Enter Your Password"><br /><br />
+            <input type="submit" value="Submit">
+        </form>
+    </fieldset>
+</div>
+<div class="positioning">
+    <button id="loginButton">Log In</button>
+    <button id="newUserButton">Create New User</button>
+    <button id="forgotButton">Forgot Password</button>
+</div>
+
+<br/><br/><br/>
+<div id='calendarInfo'>
+    <form action="/action_page.php">
+        Check In: <input type="date" name="checkin">
+        Check Out: <input type="date" name="checkout">
+        <input type="submit">
+    </form>
+</div>
 
 <?php
 /**

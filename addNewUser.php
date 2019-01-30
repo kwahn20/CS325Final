@@ -15,7 +15,7 @@ $newPassword = $_POST["newPassword"];
 $userName = 'kwahn20';
 $password = '';
 $database = 'kwahn20';
-$sql = "insert into logins values(".$newUserName.",".$newPassword.",'N',".$newFirstName.",".$newLastName.",".$newEmailAddress.");";
+$sql = "insert into logins values('".$newUserName."','".$newPassword."','N','".$newFirstName."','".$newLastName."','".$newEmailAddress."');";
 
 try{
     $mySQLLink = new PDO("mysql:dbname=$database;host=localhost", "$userName", "$password");
